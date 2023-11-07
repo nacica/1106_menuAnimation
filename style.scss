@@ -5,51 +5,179 @@
 //         <span></span>
 //     </button>
 
-// 効かない
+
+
+// 11/08　0825　4回目チャレンジ
+
+
 body{
-    background-color: gray;
-    
+    background-color: lightblue;
+    transition: background-color 1.4s ease;
+
     & .AAA{
         background-color: unset;
+        outline: none!important;
         border: none;
-        outline: none;
-        
-        
-        
-        
-        & >span{
-            transition: all 1.5s ease;
-            
+        & span{
+            transition: transform 1.4s ease;
+            background-color: gray;
             display: block;
+            border-radius: 20px;
             width: 100px;
-            height: 10px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            background-color: aquamarine;
-            
+            height: 15px;
+            margin-bottom: 20px;
+
         }
-        
+    }
+
+    &.BBB{
+        background-color: rgb(255, 185, 185);
+        & .AAA{
+
+            span{
+
+                &:nth-child(1){
+                    transform: translateY(100px)rotate(135deg);
+                }
+                &:nth-child(2){
+                    transform: translateX(-100px)scale(0);
+                }
+                &:nth-child(3){
+                    transform: translateY(28px)rotate(-135deg);
+                }
+
+                    
+               }
+        }
     }
 }
 
-    .BBB{
-        background-color: lightgray;
-        & .AAA span{
 
-            display: block;
-            background-color: gray;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 11/06　1903　3回目チャレンジ
+
+
+// body{
+//     background-color: lightblue;
+//     transition: all 1.4s ease;
+
+//     & .AAA{
+//         background-color: unset;
+//         border: none;
+//         & span{
+//             display: block;
+//             width: 60px;
+//             height: 5px;
+//             background-color: gray;
+//             margin-bottom: 20px;
+//             border-radius: 10px;
+//             transition: all 1.0s ease;
             
-            &:nth-child(1){
-                transform: translateY(50px)rotate(135deg);
-            }
-            &:nth-child(2){
-                transform: translateX(-50px)scaleX(0);
-            }
-            &:nth-child(3){
-                transform: translateY(-30px)rotate(-135deg);
-            }
-            }
-        }
+//         }
+//     }
+
+//     &.BBB{
+//         background-color: lightgray;
+
+//         & .AAA>span{
+//             background-color: red;
+//             &:nth-child(1){
+//                 transform: translateY(40px)rotate(45deg);
+//                 transition-delay: 0.1s;
+//             }
+//             &:nth-child(2){
+//                 transform: translateX(-30px)scaleX(0);
+//             }
+//             &:nth-child(3){
+//                 transform: translateY(-12px)rotate(-225deg);
+//                 // transition-delay: 0.1s;
+//             }
+            
+//         }
+//     }
+// }
+
+
+// // 効かない
+// body{
+//     background-color: gray;
+    
+//     & .AAA{
+//         background-color: unset;
+//         border: none;
+//         outline: none;
+        
+        
+        
+        
+//         & >span{
+//             transition: all 1.5s ease;
+            
+//             display: block;
+//             width: 100px;
+//             height: 10px;
+//             margin-bottom: 30px;
+//             border-radius: 10px;
+//             background-color: aquamarine;
+            
+//         }
+        
+//     }
+// }
+
+//     .BBB{
+//         background-color: lightgray;
+//         & .AAA span{
+
+//             display: block;
+//             background-color: gray;
+            
+//             &:nth-child(1){
+//                 transform: translateY(50px)rotate(135deg);
+//             }
+//             &:nth-child(2){
+//                 transform: translateX(-50px)scaleX(0);
+//             }
+//             &:nth-child(3){
+//                 transform: translateY(-30px)rotate(-135deg);
+//             }
+//             }
+//         }
     
 
 

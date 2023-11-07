@@ -1,34 +1,30 @@
 body {
-  background-color: gray;
+  background-color: lightblue;
+  transition: background-color 1.4s ease;
 }
 body .AAA {
   background-color: unset;
+  outline: none !important;
   border: none;
-  outline: none;
 }
-body .AAA > span {
-  transition: all 1.5s ease;
-  display: block;
-  width: 100px;
-  height: 10px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  background-color: aquamarine;
-}
-
-.BBB {
-  background-color: lightgray;
-}
-.BBB .AAA span {
-  display: block;
+body .AAA span {
+  transition: transform 1.4s ease;
   background-color: gray;
+  display: block;
+  border-radius: 20px;
+  width: 100px;
+  height: 15px;
+  margin-bottom: 20px;
 }
-.BBB .AAA span:nth-child(1) {
-  transform: translateY(50px) rotate(135deg);
+body.BBB {
+  background-color: rgb(255, 185, 185);
 }
-.BBB .AAA span:nth-child(2) {
-  transform: translateX(-50px) scaleX(0);
+body.BBB .AAA span:nth-child(1) {
+  transform: translateY(100px) rotate(135deg);
 }
-.BBB .AAA span:nth-child(3) {
-  transform: translateY(-30px) rotate(-135deg);
+body.BBB .AAA span:nth-child(2) {
+  transform: translateX(-100px) scale(0);
+}
+body.BBB .AAA span:nth-child(3) {
+  transform: translateY(28px) rotate(-135deg);
 }/*# sourceMappingURL=style.css.map */
